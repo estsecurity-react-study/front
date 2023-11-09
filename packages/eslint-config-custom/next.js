@@ -1,6 +1,6 @@
-const { resolve } = require("node:path");
+const { resolve } = require("node:path")
 
-const project = resolve(process.cwd(), "tsconfig.json");
+const project = resolve(process.cwd(), "tsconfig.json")
 
 /*
  * This is a custom ESLint configuration for use with
@@ -32,6 +32,9 @@ module.exports = {
       typescript: {
         project,
       },
+      node: {
+        extensions: [".mjs", ".js", ".jsx", ".ts", ".tsx"],
+      },
     },
   },
   ignorePatterns: ["node_modules/", "dist/"],
@@ -39,4 +42,4 @@ module.exports = {
   rules: {
     "import/no-default-export": "off",
   },
-};
+}
