@@ -71,7 +71,7 @@ export default function Page(): JSX.Element {
         </div>
       </div>
 
-      <div className="text-red-500">test</div>
+      <div className="text-yellow-600">test page</div>
       <div className="relative flex place-items-center ">
         <div className="font-sans w-auto pb-16 pt-[48px] md:pb-24 lg:pb-32 md:pt-16 lg:pt-20 flex justify-between gap-8 items-center flex-col relative z-0">
           <div className="z-50 flex items-center justify-center w-full">

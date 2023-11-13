@@ -1,13 +1,13 @@
-import * as React from "react"
+import * as React from "react";
 
 export function Card({
   title,
   children,
   href,
 }: {
-  title: string
-  children: React.ReactNode
-  href: string
+  title: string;
+  children: React.ReactNode;
+  href: string;
 }): JSX.Element {
   return (
     <a
@@ -22,9 +22,9 @@ export function Card({
           -&gt;
         </span>
       </h2>
-      <p className="ui-m-0 ui-max-w-[30ch] ui-text-sm ui-opacity-50 ui-text-red-500">
+      <p className="ui-m-0 ui-max-w-[30ch] ui-text-sm ui-opacity-50 ui-text-green-700">
         {children}
       </p>
     </a>
-  )
+  );
 }
