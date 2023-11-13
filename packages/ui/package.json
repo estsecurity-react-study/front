@@ -4,6 +4,8 @@
   "sideEffects": [
     "**/*.css"
   ],
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
   "type": "commonjs",
   "exports": {
@@ -11,10 +13,14 @@
     "./styles.css": "./dist/index.css"
   },
   "license": "MIT",
+  "files": [
+    "dist/**"
+  ],
   "scripts": {
-    "build": "tsup",
+    "build": "tsup src/index.tsx --format esm,cjs --dts --external react",
+    "dev": "tsup src/index.tsx --format esm,cjs --watch --dts --external react",
     "lint": "eslint src/",
-    "dev": "tsup --watch",
+    "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist",
     "check-types": "tsc --noEmit"
   },
   "peerDependencies": {
@@ -36,6 +42,9 @@
     "typescript": "^5.1.6"
   },
   "dependencies": {
-    "@eds/ui": "0.18.26-b.2"
+    "@eds/ui": "0.18.26-b.2",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.0.0",
+    "tailwind-merge": "^2.0.0"
   }
 }

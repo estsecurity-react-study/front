@@ -1,5 +1,5 @@
-import type { Options } from "tsup";
-import { defineConfig } from "tsup";
+import type { Options } from "tsup"
+import { defineConfig } from "tsup"
 
 export default defineConfig((options: Options) => ({
   treeshake: true,
@@ -11,4 +11,4 @@ export default defineConfig((options: Options) => ({
   clean: true,
   external: ["react"],
   ...options,
-}));
+}))

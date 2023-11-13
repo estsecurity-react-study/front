@@ -1,5 +1,4 @@
 // styles
-import "./styles.css";
+import "./styles.css"
 
-// components
-export * from "./card";
+export { Button, type ButtonProps } from "./button"
