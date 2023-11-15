@@ -1,3 +1,4 @@
+import "../styles/style.css"
 import "ui/dist/index.css"
 
 /** @type { import('@storybook/react').Preview } */

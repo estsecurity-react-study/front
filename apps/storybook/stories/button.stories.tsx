@@ -26,6 +26,7 @@ export const Primary: Story = {
   render: (props) => (
     <Button
       {...props}
+      className="text-red-500"
       onClick={(): void => {
         // eslint-disable-next-line no-alert -- alert for demo
         alert("Hello from Turborepo!")
