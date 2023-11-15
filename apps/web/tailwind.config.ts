@@ -5,7 +5,7 @@ import sharedConfig from "tailwind-config/tailwind.config.ts"
 
 const config: Pick<Config, "presets" | "important"> = {
   presets: [sharedConfig],
-  important: true,
+  important: "#app",
 }
 
 export default config
